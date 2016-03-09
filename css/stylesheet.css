@@ -1,0 +1,68 @@
+/*header*/
+#header{
+	position: fixed;
+	opacity: 0.3;
+	background-color: #fff;
+	width:100%;
+	z-index:1;
+    top:0;
+	left:0;
+	height: 75px;
+}
+header{
+    height: 75px;
+	position: fixed;
+	width: 100%
+	opacity: 0;
+	z-index: 100;
+	top:0;
+	left:0;
+}
+header h1{
+	margin-left: 20px;
+	float: right;
+	color: #333;
+	font-size:35px;
+}
+nav {
+	position: fixed;
+	margin-top: 20px;
+	float: right;
+	right:0;
+	margin-right: 30px;
+}
+nav li {
+	display: inline-block;
+	margin: 0 20px;
+}
+nav li a {
+	padding: 25px 0;
+	position: relative;	
+	color: #333;
+	text-decoration: none;
+	font-size:17px;
+}
+nav li a:hover {
+	padding: 25px 0;
+	position: relative;	
+	color: #0000ff;
+	text-decoration: none;
+	font-size:17px;
+}
+/*content*/
+
+/*footer*/
+#me_img1{
+	position: fixed;
+	float:left;
+	left:0;
+	bottom: 0;
+	height: 50%;
+}
+#me_img2{
+    position: fixed;
+	
+	right:1000;
+	bottom:0;
+	height: auto;
+}
