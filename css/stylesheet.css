@@ -1,3 +1,4 @@
+ body { font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU"; }
 /*header*/
 #header{
 	position: fixed;
@@ -9,7 +10,7 @@
 	left:0;
 	height: 75px;
 }
-header{
+header {
     height: 75px;
 	position: fixed;
 	width: 100%
@@ -18,25 +19,26 @@ header{
 	top:0;
 	left:0;
 }
-header h1{
-	margin-left: 20px;
-	float: right;
-	color: #333;
-	font-size:35px;
+header img{
+	display: inline-block;
+  	height: 75px;
 }
 nav {
 	position: fixed;
-	margin-top: 20px;
-	float: right;
-	right:0;
-	margin-right: 30px;
+	left:50%;
+	width:1000px;
+	margin-left: -500px;
+	text-align: center;
+}
+nav ul{
+	display: inline-block;
 }
 nav li {
 	display: inline-block;
+	position: relative;
 	margin: 0 20px;
 }
 nav li a {
-	padding: 25px 0;
 	position: relative;	
 	color: #333;
 	text-decoration: none;
@@ -45,24 +47,77 @@ nav li a {
 nav li a:hover {
 	padding: 25px 0;
 	position: relative;	
-	color: #0000ff;
 	text-decoration: none;
 	font-size:17px;
+	font-weight: bold;
 }
 /*content*/
-
+.section {
+	text-align: center;
+}
+.page{
+	display: block;
+	margin: 75px 12% 0px 12%;
+	border-radius: 10px;
+	background-color: #eee;
+	color: inherit;
+	height: 50%;
+	text-align: center;
+}
+.hello{
+	font-size: auto;
+	color: #eee;
+	margin: 25px 0;
+}
+#img_down{
+	width: 5%;
+	height: auto;
+}
+.year
+{
+	width:80px;
+	height:80px; 
+	border-radius:99em;
+	background-color: #ddd;
+	top:-30px;
+	right: -30px;
+	position:relative; /*to IE*/　
+	box-shadow:2px 2px 2px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),6px 6px 12px rgba(20%,20%,40%,0.4);
+}
+.year p{
+	color: #999;
+}
+#pagebg{
+	border: solid 10px blue;
+	background-color: red;
+	opacity: 0.3;
+	position: fixed;
+	width:100px;
+	height: 100px;
+	float:center;
+}
+#img_arrow{
+	float:left;
+	width:auto;
+	max-width: 300px;
+	left:300px;
+}
 /*footer*/
-#me_img1{
+footer img{
 	position: fixed;
 	float:left;
 	left:0;
 	bottom: 0;
 	height: 50%;
 }
-#me_img2{
+#gotop {
     position: fixed;
-	
-	right:1000;
-	bottom:0;
-	height: auto;
+    right: 20px;
+    bottom: 20px;    
+    padding: 10px 15px;    
+    font-size: 20px;
+    background: #fff;
+    opacity: 0.5;
+    color: #000;
+    cursor: pointer;
 }

@@ -5,61 +5,82 @@
 	<title>HELLO! I'M SMILEY!</title>
 	<link rel='stylesheet' type='text/css' href='css/stylesheet.css'/>
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
-	<style>
-		.section { text-align: center; font: 50px "Microsoft Yahei"; color: #000;}
-	</style>
-	<script type='text/javascript' src='js/script.js'></script>
-	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-1.12.2.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
-	<script>
-$(function(){
-	$('#dowebok').fullpage({
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90', '#A041FF'],
-		'navigation': false
-	});
-});
-	</script>
+	<script src='js/script.js'></script>
 </head>
 <body>
 	<div id="header"></div>
 	<header>
-		<h1>HELLO! I'M SMILEY! : )</h1>
+		<!--<img src="image/logo.png" alt="logo">-->
 		<nav>			
 			<ul>
-				<li><a href="#">關於我</a></li>
-				<li><a href="#">工作經歷</a></li>
-				<li><a href="#">旅程</a></li>
+				<li ><a id="nav_about" href="#p2" >關於我</a></li>
+				<li><a id="nav_school" href="#p3">學歷</a></li>
+			</ul>
+			<img src="image/logo.png" alt="logo">
+			<ul>
+				<li><a id="nav_experience" href="#p4">工作經歷</a></li>
+				<li><a id="nav_work" href="#p5">作品集</a></li>
 			</ul>
 		</nav>	
 	</header>	
 	<content>
 		<div id="dowebok">
 			<div class="section">
-
-				<h3>第一頁</h3>
-				<p>旁邊有小圓點看到了嗎</p>
+				<!--<img id="img_arrow" src="image/me_arrow.png" alt="arrow">-->
+				<h1 class="hello">HELLO!</h1>
+				<h1 class="hello">I'M SMILEY!</h1>
+				<img id="img_down" src="image/downarrow.png" alt="downarrow">
+			</div>
+			<div class="section" >
+				<div class="page">
+					<div class="year"><p>1985</p></div>
+					<h1>關於我</h1>
+					<p>林宛蓉(Smiley)</p>
+					<p>1985.8.4</p>
+					<p>新北市</p>
+				</div>
+			</div>
+			<div class="section" >
+				<div class="page">
+					<h1>學歷</h1>
+					<p>國立中央大學 土木工程所空間資訊組(Sep. 2007 - June 2009)</p>
+					<p>國立嘉義大學 土木與水資源工程學系(Sep. 2003 - June 2007)</p>
+				</div>
 			</div>
 			<div class="section">
-				<h3>第二頁</h3>
-				<p>用滑鼠滾輪也可以控制</p>
+				<div class="page">
+					<h1>開發經驗</h1>
+					<p>國立中央大學太空及遙測研究中心 研究助理(Aug. 2009 - Feb. 2012)</p>
+					<p>使用技術：C++, </p>
+					<p>互動國際數位股份有限公司 系統開發處(Mar. 2012 - Mar. 2015)</p>
+					<p>使用技術：Silverlight, C#, asp.Net, WCF, MS SQL, TFS</p>
+					<p>Silverlight作品：<a href="" target="_blank">環保署居家生活網</a></p>
+					<p>其餘作品為客戶內部網站，無法提供。</p>
+				</div>
 			</div>
 			<div class="section">
-				<h3>第三頁</h3>
-				<p>圓點可以改變顏色.大小</p>
+				<div class="page">
+					<h1>工作經驗2</h1>
+					<p>互動國際數位股份有限公司 系統開發處(Mar. 2012 - Mar. 2015)</p>
+					<p>使用技術：Silverlight, C#, asp.Net, WCF, MS SQL, TFS</p>
+					<p>Silverlight作品：<a href="" target="_blank">環保署居家生活網</a></p>
+					<p>其餘作品為客戶內部網站，無法提供。</p>
+				</div>
 			</div>
 			<div class="section">
-				<h3>第四頁</h3>
-				<p>快結束摟</p>
-			</div>
-			<div class="section">
-				<h3>第五頁</h3>
-				<p>最後一頁</p>
+				<div class="page">
+					<h1>作品集</h1>
+					<p>Living Project around Taiwan (Apr. 2015 - June 2015)</p>
+					<p>Go! Camino de Santiago! (Sep. 2015 - Oct. 2015)</p>
+				</div>
 			</div>
 		</div>
 	</content>	
 	<footer>
-		<img src="image/me.png" alt="me" id="me_img1">
-		<img src="image/me_arrow.png" alt="arrow" id="me_img2">
+		<img src="image/me.png" alt="me">
 	</footer>
+	<a href="#p1"><div id="gotop">^</div></a>
 </body>
 </html>

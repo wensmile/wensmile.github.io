@@ -1,0 +1,68 @@
+element.style {
+}
+
+.carousel {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+.carousel {
+    position: relative;
+}
+.btn-primary, .btn-primary:visited{
+    color: #333;
+    background-color: #eee;
+    border-color: #333;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    box-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.btn-primary:hover{
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    padding-bottom: 0px;
+    color: #5a5a5a;
+    font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU"; 
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #000;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+Pseudo ::before element
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+Pseudo ::after element
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
