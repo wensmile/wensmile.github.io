@@ -7,7 +7,16 @@
     <script src="js/jquery-1.12.2.js"></script>
     <script src='js/livingproject.js'></script>
     <link rel='stylesheet' type='text/css' href='css/livingproject.css'/>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo49pMc2bBiARLdBcB28B8j2BcT5os0-w"
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map-canvas'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo49pMc2bBiARLdBcB28B8j2BcT5os0-w&callback=initMap"
     async defer></script>
   </head>
   <body>
