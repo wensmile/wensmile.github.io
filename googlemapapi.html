@@ -5,8 +5,10 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <script src="js/jquery-1.12.2.js"></script>
-
+    <script src='js/livingproject.js'></script>
     <link rel='stylesheet' type='text/css' href='css/livingproject.css'/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo49pMc2bBiARLdBcB28B8j2BcT5os0-w"
+    async defer></script>
   </head>
   <body>
    <aside>
@@ -47,16 +49,5 @@
           </ul>
     </div>
     </content>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map-canvas'), {
-          center: {lat: 23.667893, lng: 120.951698},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo49pMc2bBiARLdBcB28B8j2BcT5os0-w&callback=initMap"
-    async defer></script>
   </body>
 </html>
