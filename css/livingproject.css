@@ -1,13 +1,44 @@
-#content{
-	float:left;
-	width:30%;
-	height: 100%
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-#content h1{
-	color: red;
+aside{
+	width:40%;
+	float:left;
+}
+content{
+	width: 60%;
+	float: right;
 }
 #map-canvas{
-	width:70%;
-	height: 100%;
-	float:right;
+	width: 100%;
+	height: auto;
+	border: solid 1px blue;
+}
+#content{
+	margin:5%;
+	height: 60%;
+	border: solid 1px red;
+}
+#tainan{
+	display: none;
+}
+#banner{
+	height:150px;
+	width: auto;
+	border: solid 1px black;
+}
+#banner img{
+	height:150px;
+	width: auto;
+}
+#nav{
+	height: 40%;
+	width:100%;
+	border: solid 1px green;
+}
+#nav li{
+	display: inline-block;
+	text-align: center;
 }
