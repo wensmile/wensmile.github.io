@@ -1,9 +1,10 @@
 $(document).ready(function(){
 	var taiwanC = new google.maps.LatLng(23.718189, 121.006771);
+	var tainanC = new google.maps.LatLng(22.997722, 120.212387);
 
 	var map = new google.maps.Map($('#map-canvas')[0], {
 		center: taiwanC,
-		zoom: 10,
+		zoom: 6,
 	});
 	//map.setCenter(new google.maps.LatLng(22.997722, 120.212387));
 	var marker = new google.maps.Marker({
@@ -11,12 +12,12 @@ $(document).ready(function(){
 		map: map,
 		title:"Taiwan!"
 	});
-	var coordInfoWindow = new google.maps.InfoWindow();
-  	coordInfoWindow.setContent("TAIWAN!");
-    coordInfoWindow.setPosition(taiwanC);
-    coordInfoWindow.open(map);
+	var infoTaiwan = new google.maps.InfoWindow();
+  	infoTaiwan.setContent("TAIWAN!");
+    infoTaiwan.setPosition(taiwanC);
+    infoTaiwan.open(map);
 	var markerTainan = new google.maps.Marker({
-		position: {lat: 22.997722, lng: 120.212387},
+		position: tainanC,
 		map: map,
 		title:"Tainan!"
 	});
@@ -26,7 +27,7 @@ $(document).ready(function(){
 		$("#front").hide();
 		$("#lukang").hide();
 		$("#dulan").hide();
-		map.setZoom(1);
+		map.setZoom(14);
 		map.setCenter(new google.maps.LatLng(22.997722, 120.212387));
 	});
 	$("#btnLukang").click(function () {
