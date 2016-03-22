@@ -46,11 +46,19 @@ $(document).ready(function(){
 		$("#front").hide();
 		$("#tainan").hide();
 		$("#dulan").hide();
+		clearMarker();
+		map.setZoom(14);
+		map.setCenter(lukangC);
+		markerLukang.setMap(map);
 	});
 	$("#btnDulan").click(function () {
 		$("#dulan").show();
 		$("#front").hide();
 		$("#lukang").hide();
 		$("#tainan").hide();
+		clearMarker();
+		map.setZoom(14);
+		map.setCenter(dulanC);
+		markerDulan.setMap(map);
 	});	
 });
