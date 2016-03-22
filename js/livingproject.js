@@ -1,15 +1,20 @@
 $(document).ready(function(){
+	var taiwanC = new google.maps.LatLng(23.718189, 121.006771);
 
 	var map = new google.maps.Map($('#map-canvas')[0], {
-		center: {lat: 23.718189, lng: 121.006771},
+		center: taiwanC,
 		zoom: 10,
 	});
 	//map.setCenter(new google.maps.LatLng(22.997722, 120.212387));
 	var marker = new google.maps.Marker({
-		position: {lat: 23.718189, lng: 121.006771},
+		position: taiwanC,
 		map: map,
 		title:"Taiwan!"
 	});
+	var coordInfoWindow = new google.maps.InfoWindow();
+  	coordInfoWindow.setContent("TAIWAN!");
+    coordInfoWindow.setPosition(taiwanC);
+    coordInfoWindow.open(map);
 	var markerTainan = new google.maps.Marker({
 		position: {lat: 22.997722, lng: 120.212387},
 		map: map,
