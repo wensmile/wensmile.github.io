@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
 aside{
 	width:40%;
 	float:left;
@@ -12,8 +13,8 @@ content{
 	float: right;
 }
 #map-canvas{
-	width: 100%;
-	height: auto;
+	width: 70%;
+	height: 70%;
 	border: solid 1px blue;
 }
 #content{

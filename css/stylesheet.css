@@ -37,19 +37,23 @@ nav li {
 	display: inline-block;
 	position: relative;
 	margin: 0 20px;
+	padding-bottom: 5px; 
 }
 nav li a {
 	position: relative;	
 	color: #333;
 	text-decoration: none;
 	font-size:17px;
+	padding-bottom: 5px; 
 }
-nav li a:hover {
+nav li a:hover, nav li.active {
 	padding: 25px 0;
 	position: relative;	
 	text-decoration: none;
 	font-size:17px;
 	font-weight: bold;
+	padding-bottom: 5px; 
+	border-bottom: solid 2px #555; 
 }
 /*content*/
 .section {
@@ -72,20 +76,6 @@ nav li a:hover {
 #img_down{
 	width: 5%;
 	height: auto;
-}
-.year
-{
-	width:80px;
-	height:80px; 
-	border-radius:99em;
-	background-color: #ddd;
-	top:-30px;
-	right: -30px;
-	position:relative; /*to IE*/　
-	box-shadow:2px 2px 2px rgba(20%,20%,40%,0.6),4px 4px 6px rgba(20%,20%,40%,0.4),6px 6px 12px rgba(20%,20%,40%,0.4);
-}
-.year p{
-	color: #999;
 }
 #pagebg{
 	border: solid 10px blue;
