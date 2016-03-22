@@ -57,7 +57,7 @@ $(document).ready(function(){
 		$("#lukang").hide();
 		$("#tainan").hide();
 		clearMarker();
-		map.setZoom(14);
+		map.setZoom(16);
 		map.setCenter(dulanC);
 		markerDulan.setMap(map);
 	});	
