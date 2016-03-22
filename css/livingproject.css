@@ -1,0 +1,13 @@
+#content{
+	float:left;
+	width:30%;
+	height: 100%
+}
+#content h1{
+	color: red;
+}
+#map-canvas{
+	width:70%;
+	height: 100%;
+	float:right;
+}
