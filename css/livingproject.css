@@ -13,8 +13,8 @@ content{
 	float: right;
 }
 #map-canvas{
-	width: 70%;
-	height: 400px;
+	width: 100%;
+	height: auto;
 	border: solid 1px blue;
 }
 #content{
@@ -22,20 +22,20 @@ content{
 	height: 60%;
 	border: solid 1px red;
 }
-#tainan{
+#tainan, #lukang, #dulan{
 	display: none;
 }
 #banner{
 	height:150px;
-	width: auto;
+	width: 100%;
 	border: solid 1px black;
 }
 #banner img{
-	height:150px;
-	width: auto;
+	height:100%;
+	width: 100%;
 }
 #nav{
-	height: 40%;
+	height: 150px;
 	width:100%;
 	border: solid 1px green;
 }
@@ -43,3 +43,12 @@ content{
 	display: inline-block;
 	text-align: center;
 }
+a > div {
+	margin: 0 20px ;
+	padding: 10px 16px;
+	text-align: center;
+	cursor:pointer;
+	border: 1px solid #333;
+	border-radius: 6px;
+	text-decoration: none;
+} 

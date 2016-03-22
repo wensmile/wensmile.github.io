@@ -7,17 +7,7 @@
     <script src="js/jquery-1.12.2.js"></script>
     <script src='js/livingproject.js'></script>
     <link rel='stylesheet' type='text/css' href='css/livingproject.css'/>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map-canvas'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo49pMc2bBiARLdBcB28B8j2BcT5os0-w&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo49pMc2bBiARLdBcB28B8j2BcT5os0-w"></script>
   </head>
   <body>
    <aside>
@@ -35,24 +25,27 @@
       <div id="tainan">
         <h1>台南</h1>
       </div>
+      <div id="lukang">
+        <h1>鹿港</h1>
+      </div>
+      <div id="dulan">
+        <h1>都蘭</h1>
+      </div>
     </div>
     <div id="nav">
           <ul>
             <li><a id="btnTainan" href="#">
             <div>
-              台南<br>
-              Apr.2015
+              April 2015<br>台南
             </div>
             </a></li>
-            <li><a href="#">
+            <li><a id="btnLukang" href="#">
               <div>
-              鹿港<br>
-              May 2015
+              May 2015<br>鹿港
               </div></a></li>
-            <li><a href="#">
+            <li><a id="btnDulan" href="#">
               <div>
-              都蘭<br>
-              June 2015
+              June 2015<br>都蘭
               </div>
               </a></li>
           </ul>
