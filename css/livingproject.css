@@ -1,7 +1,10 @@
 html, body {
+	 font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU"; 
     height: 100%;
-    margin: 0;
+    margin: 2% 6%;
     padding: 0;
+    background-color: #eee;
+    color: #333;
 }
 
 aside{
@@ -14,41 +17,55 @@ content{
 }
 #map-canvas{
 	width: 100%;
-	height: auto;
-	border: solid 1px blue;
+	height:100%;
 }
 #content{
-	margin:5%;
 	height: 60%;
-	border: solid 1px red;
+	width: 100%;
+	text-align: center;
 }
 #tainan, #lukang, #dulan{
 	display: none;
 }
-#banner{
-	height:150px;
-	width: 100%;
-	border: solid 1px black;
+#img_c{
+	width:100px;
+	height:100px;
 }
-#banner img{
-	height:100%;
+#banner{
+	height: 30%;
 	width: 100%;
+	background-image: url(../image/lp_banner.jpg);
+	background-position: center;
+	text-align: center;
+	border-radius: 0 10px 0 10px;
+}
+#btnTaiwan{
+	position: relative;
+	top: 100px;
+}
+#btnTaiwan a{
+	color: #eee;
+	text-decoration: none;
+	font-size: 3em;
 }
 #nav{
-	height: 150px;
-	width:100%;
-	border: solid 1px green;
+	padding: 0;
+	width: 100%;
+	height: 30%;
 }
-#nav li{
+#nav ul{
+	margin:0;
+	padding: 0;
+	text-align: center;
+	vertical-align: bottom;
+}
+#nav li a:hover{
+	font-style:italic;
+	font-weight: bold;	
+}
+#nav li, #nav li a:visited{
 	display: inline-block;
 	text-align: center;
+	padding: 10px 20px;
+	color: #333;
 }
-a > div {
-	margin: 0 20px ;
-	padding: 10px 16px;
-	text-align: center;
-	cursor:pointer;
-	border: 1px solid #333;
-	border-radius: 6px;
-	text-decoration: none;
-} 

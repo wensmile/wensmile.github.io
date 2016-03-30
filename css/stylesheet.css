@@ -1,4 +1,6 @@
- body { font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU"; }
+ body { font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU"; 
+		color: #333;
+}
 /*header*/
 #header{
 	position: fixed;
@@ -32,6 +34,9 @@ nav {
 }
 nav ul{
 	display: inline-block;
+	padding: 0;
+	position: relative;
+	top:-20px;
 }
 nav li {
 	display: inline-block;
@@ -47,7 +52,6 @@ nav li a {
 	padding-bottom: 5px; 
 }
 nav li a:hover, nav li.active {
-	padding: 25px 0;
 	position: relative;	
 	text-decoration: none;
 	font-size:17px;
@@ -67,6 +71,7 @@ nav li a:hover, nav li.active {
 	color: inherit;
 	height: 50%;
 	text-align: center;
+	padding-top: 5px;
 }
 .hello{
 	font-size: auto;
@@ -92,13 +97,19 @@ nav li a:hover, nav li.active {
 	max-width: 300px;
 	left:300px;
 }
+#aWork, #aWork:hover, #aWork:visited{
+	color:#333;
+}
+#aWork:hover{
+	font-weight: bold;
+}
 /*footer*/
 footer img{
 	position: fixed;
 	float:left;
 	left:0;
 	bottom: 0;
-	height: 50%;
+	height: 40%;
 }
 #gotop {
     position: fixed;

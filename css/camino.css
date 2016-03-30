@@ -10,17 +10,17 @@ element.style {
     position: relative;
 }
 .btn-primary, .btn-primary:visited{
-    color: #333;
+    color: #222;
     background-color: #eee;
-    border-color: #333;
+    border-color: #000;
     font-weight: bold;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
     box-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 .btn-primary:hover{
-    color: #fff;
-    background-color: #333;
-    border-color: #333;
+    color: #eee;
+    background-color: #222;
+    border-color: #222;
 }
 * {
     -webkit-box-sizing: border-box;

@@ -30,7 +30,21 @@ $(document).ready(function(){
 		markerDulan.setMap(null);
 	}
 
-	$("#map-canvas").css('height', $(window).height()-150); 
+	var map_height = $(window).height()*0.6;
+	$("#map-canvas").css('height', map_height); 
+	var content_height = $(window).height()*0.6*0.7;
+	$("#content").css('height', content_height); 
+	var nav_height = $().height()*0.6*0.3;
+	$("#nav").css('height', nav_height); 
+	$("#btnTaiwan").click(function () {
+		$("#tainan").hide();
+		$("#front").show();
+		$("#lukang").hide();
+		$("#dulan").hide();
+		clearMarker();
+		map.setZoom(7);
+		map.setCenter(taiwanC);
+	});
 	$("#btnTainan").click(function () {
 		$("#tainan").show();
 		$("#front").hide();

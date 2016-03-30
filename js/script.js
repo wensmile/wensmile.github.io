@@ -1,8 +1,8 @@
 $(document).ready(function(){
 		
 		$('#dowebok').fullpage({
-			anchors:['p1', 'p2', 'p3', 'p4', 'p5', 'p6'],
-			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE','#FF8D93', '#FFBD7F', '#F3E59A'],
+			anchors:['p1', 'p2', 'p3', 'p4', 'p5'],
+			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE','#FF8D93', '#FFBD7F'],
 			'navigation': false,
 		});
 		$("#gotop").click(function(){
